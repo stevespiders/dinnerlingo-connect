@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -267,7 +266,7 @@ const Explore = () => {
                     <SelectValue placeholder="Select location" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Any Location</SelectItem>
+                    <SelectItem value="all">Any Location</SelectItem>
                     {locations.map((location, index) => (
                       <SelectItem key={index} value={location}>{location}</SelectItem>
                     ))}
